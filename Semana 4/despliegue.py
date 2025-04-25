@@ -34,7 +34,7 @@ model = LinearRegression()
 model.fit(X_train_top10, y_train)
 
 #Evaluacion del modelo
-# y_pred = model.predict(X_test_top10)
+y_pred = model.predict(X_test_top10)
 print("R²:", r2_score(y_test, y_pred))
 print("RMSE:", root_mean_squared_error(y_test, y_pred))
 
